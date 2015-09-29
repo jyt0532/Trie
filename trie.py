@@ -25,7 +25,7 @@ class Trie:
             print tabs + key + ":" + str(value.count)
             if bool(value.children):
                 value.children.print_trie()
-    def get_ngram_count(self, words):
+    def get_string_count(self, words):
         if words[0] not in self.tree:
             return 0
         else:
